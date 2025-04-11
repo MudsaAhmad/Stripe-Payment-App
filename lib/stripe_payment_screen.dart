@@ -22,10 +22,10 @@ class _StripePaymentScreenState extends State<StripePaymentScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 TextButton(
-                    onPressed: () {
-                      value.makePayment();
+                    onPressed: () async {
+                      await value.makePayment();
                     },
-                    child: const Text('Pau!!'))
+                    child: const Text('Pay Now!!'))
               ],
             ),
           );

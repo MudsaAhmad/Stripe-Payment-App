@@ -12,8 +12,7 @@ void main() async {
 }
 
 Future<void> initializeStripe() async {
-  Stripe.publishableKey =
-      "pk_test_51ORvfgKVlAPqjgHvE74plrx6X8tL9OaqUEntKfZiS7hCzFn69emue1lvR4S7qS3bvcEpi2KvwLWpVX4STcxlsgBr007E76FbyK";
+  Stripe.publishableKey = "your-publishable-key";
   await Stripe.instance.applySettings();
 }
 

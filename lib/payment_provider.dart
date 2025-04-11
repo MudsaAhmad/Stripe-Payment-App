@@ -60,8 +60,7 @@ class StripePaymentProvider with ChangeNotifier {
         Uri.parse('https://api.stripe.com/v1/payment_intents'),
         body: body,
         headers: {
-          'Authorization':
-              'Bearer sk_test_51ORvfgKVlAPqjgHvpozlQ2VGiD4gRUgrurMTMOShea1x6Nu1Aa6zE7NlwaHHhs6CI9Kw1rFc0nAlldE8o07jOTdp00LM1DwF6e',
+          'Authorization': 'Bearer your-secret-key',
           'Content-Type': 'application/x-www-form-urlencoded',
         },
       );
